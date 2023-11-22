@@ -1,0 +1,20 @@
+<div *ngFor="let user of users">
+    {{ user.Firstname }} {{ user.Lastname }} (Email: {{ user.Email }})
+</div>
+
+
+<h1>Data passed from parent component</h1>
+    <div *ngFor="let user of parentUsers">
+      {{ user.Firstname }} {{ user.Lastname }} (Email: {{ user.Email }})
+    </div>
+
+    <h1>Data passed from child component</h1>
+    <div *ngFor="let user of childUsers">
+      {{ user.Firstname }} {{ user.Lastname }} (Email: {{ user.Email }})
+    </div>
+
+
+    <div>
+      <!-- Your existing user component content goes here -->
+      <button (click)="displayUsers()">Display Users</button>
+    </div>

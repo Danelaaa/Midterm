@@ -1,0 +1,41 @@
+<!-- <div class="container mt-4">
+  <form [formGroup]="userForm" (submit)="submitForm()">
+      <div class="form-group">
+        <label for="firstname">First Name</label>
+        <input type="text" class="form-control" id="firstname" formControlName="firstname">
+        <div *ngIf="userForm.get('firstname').invalid && (userForm.get('firstname').dirty || userForm.get('firstname').touched)" class="invalid-feedback d-block">
+          <div *ngIf="userForm.get('firstname').hasError('required')">First Name is required.</div>
+          <div *ngIf="userForm.get('firstname').hasError('minlength')">First Name must be at least 3 characters.</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="lastname">Last Name</label>
+        <input type="text" class="form-control" id="lastname" formControlName="lastname">
+        <div *ngIf="userForm.get('lastname').invalid && (userForm.get('lastname').dirty || userForm.get('lastname').touched)" class="invalid-feedback d-block">
+          <div *ngIf="userForm.get('lastname').hasError('required')">Last Name is required.</div>
+          <div *ngIf="userForm.get('lastname').hasError('minlength')">Last Name must be at least 3 characters.</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" class="form-control" id="phone" formControlName="phone">
+        <div *ngIf="userForm.get('phone').invalid && (userForm.get('phone').dirty || userForm.get('phone').touched)" class="invalid-feedback d-block">
+          <div *ngIf="userForm.get('phone').hasError('required')">Phone Number is required.</div>
+          <div *ngIf="userForm.get('phone').hasError('minlength')">Phone Number must be at least 9 characters.</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" formControlName="email">
+        <div *ngIf="userForm.get('email').invalid && (userForm.get('email').dirty || userForm.get('email').touched)" class="invalid-feedback d-block">
+          <div *ngIf="userForm.get('email').hasError('required')">Email is required.</div>
+          <div *ngIf="userForm.get('email').hasError('minlength')">Email must be at least 8 characters.</div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div> -->
